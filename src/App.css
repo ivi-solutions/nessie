@@ -1,0 +1,78 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.SwitchRoot {
+  width: 42px;
+  height: 25px;
+  background-color: lightgray;
+  border-radius: 9999px;
+  position: relative;
+}
+.SwitchThumb {
+  display: block;
+  width: 21px;
+  height: 21px;
+  background-color: white;
+  border-radius: 9999px;
+  transition: transform 100ms;
+  transform: translateX(2px);
+}
+.SwitchRoot[data-state='checked'] .SwitchThumb {
+  transform: translateX(19px);
+}
+
+.header {
+  position: fixed;   /* Keeps the header fixed at the top */
+  top: 0;            /* Aligns it at the top of the page */
+  left: 0;           /* Aligns it to the left side */
+  width: 100%;       /* Make sure the header spans the full width */
+  background-color: #333; /* Optional background color */
+  color: white;      /* Text color */
+  padding: 10px 20px; /* Adjust padding as needed */
+  z-index: 1000;     /* Ensure it stays above other content */
+}
+
+/* Add padding to the body or content below to avoid overlap with the header */
+.body-content {
+  padding-top: 60px; /* Adjust based on the height of your header */
+}

@@ -1,0 +1,60 @@
+/* header.css */
+.gc-topbar {
+  background-color: white;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.container {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+}
+.gc-logo img {
+  height: 40px;
+}
+
+.gc-lang {
+  text-align: right;
+}
+
+.gc-lang-btn {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  text-decoration: underline;
+  color: #0645ad;
+  cursor: pointer;
+}
+
+.gc-navbar {
+  background-color: #333;
+}
+
+.gc-nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 10px 0;
+  display: flex;
+  gap: 20px;
+}
+
+.gc-nav-list li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.gc-nav-list li a:hover {
+  text-decoration: underline;
+}
+
+
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
